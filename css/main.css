@@ -302,24 +302,25 @@ textarea {
         page-break-after: avoid;
     }
 }
+@font-face {
+    font-family: Freestyle Script;
+    src: url("../fonts/FREESCPT.TTF");
+}
 
-.intro h1{
+h1{
     background: rgba(0,0,0,0.5);
     color: white;
 }
 
 h2{
+    color: #adb1cc;
     font-family: Freestyle Script;
     font-size: 85px;
 }
 
-/*.intro{
-    background: rgba(0,0,0,0.5);
-    border-radius: 5%;
-    padding: 0;
-    margin: 0;
-    width: auto;
-}*/
+h3{
+    color: #adb1cc;
+}
 
 #slide1{
     background-image: url("../img/backg.jpg");
@@ -337,24 +338,25 @@ h2{
     background-image: url("../img/backg2.jpg");
 }
 
+#slide5{
+    background: linear-gradient(to left, #1f2847, #281f47);
+}
 
 #footer {
 bottom: 0px;
 position: fixed;
-height: 10px;
+height: 20px;
 display: block;
 width: 100%;
-background: #333;
+background: #252525;
 z-index: 9;
 text-align: center;
 color: #f2f2f2;
-padding: 5px 0;
 }
 
 .round{
     border-radius: 100%;
-    margin: 100px 200px;
-    width: 25%;
+    width: 75%;
 }
 
 /*float right and left class*/
@@ -366,86 +368,25 @@ padding: 5px 0;
     float: left;
 }
 
+img{
+    margin-top: 5px;
+}
 
-.lightblue{
+form{
+    text-align: left;
     color: #adb1cc;
 }
 
-
-/*.row{
-    display: flex;
+hr{
+    margin: 0;
 }
 
-.back{
+.resizedTextbox{
+    width: 450px;
+    height: 200px;
+}
+
+.news{
     background: rgba(0,0,0,0.5);
-    border-radius: 5%;
-    left: 500px;
-    margin: 0 auto;
-    position: absolute;
-    top: 400px;
-    width: auto;
+    border-radius: 2%;
 }
-
-.back2{
-    background: rgba(0,0,0,0.5);
-}
-
-.half{
-    width: 50%;
-}
-
-.page{    
-    height: 900px;
-    width: auto;
-}
-
-.page h1{
-    color: white;
-    font-size: 200px;
-    margin: 0 auto;
-}
-
-.quarter{
-    width: 25%;
-}
-
-.quarter img{
-    margin: 60px 30px;
-    width: auto;
-}
-
-.round{
-    border-radius: 100%;
-    margin: 100px 200px;
-    width: 50%;
-}
-
-.page{
-    width: 100%;
-}
-
-
-#home{
-    background-image: url("../img/backg.jpg");
-}
-
-#about{
-    background: linear-gradient(#1f2847, #281f47);
-}
-
-#portfolio{
-    background: linear-gradient(#281f47, #1f2847);
-}
-
-#news{
-    background-image: url("../img/backg2.jpg");
-}
-
-#news h2{
-    margin: 0 45px;
-    font-size: 160px;
-}
-
-.lightblue{
-    color: #adb1cc;
-}*/
