@@ -323,6 +323,8 @@ h3{
 }
 
 #slide1{
+    width: 100%;
+    height: 800px;
     background-image: url("../img/backg.jpg");
 }
 
@@ -389,4 +391,16 @@ hr{
 .news{
     background: rgba(0,0,0,0.5);
     border-radius: 2%;
+}
+@media (max-width: 900px) {
+    .grid-img{
+        width: 90px;
+        height: 90px;
+    }
+    #slide3{
+        padding-bottom: 50px;
+    }
+    .news{
+        border-radius: 0;
+    }
 }

@@ -19,24 +19,6 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-
-
-
-        <script type="text/javascript">
-            if ($(window).width() < 960) {
-               $('#fullpage').fullpage({
-                                anchors: ['firstPage', 'secondPage', '3rdPage'],
-                                sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
-                                slidesNavigation: true,
-                            });
-
-            }
-            else {
-              $('#fullpage').fullpage({
-                    var console = { log: function() {} };
-              });
-            }
-        </script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -73,18 +55,18 @@
                 <div class="slide" id="slide3" data-anchor="slide3">
                     <h2>Portfolio</h2>
                     <div class="row">
-                        <img src="img/01.jpg">
-                        <img src="img/02.jpg">
-                        <img src="img/03.jpg">
-                        <img src="img/04.jpg">
+                        <img class="grid-img" src="img/01.jpg">
+                        <img class="grid-img" src="img/02.jpg">
+                        <img class="grid-img" src="img/03.jpg">
+                        <img class="grid-img" src="img/04.jpg">
                     </div>
                     <div class="row">
-                        <img src="img/05.jpg">
-                        <img src="img/06.jpg">
-                        <img src="img/07.jpg">
-                        <img src="img/08.jpg">
+                        <img class="grid-img" src="img/05.jpg">
+                        <img class="grid-img" src="img/06.jpg">
+                        <img class="grid-img" src="img/07.jpg">
+                        <img class="grid-img" src="img/08.jpg">
                     </div>
-                </div>  
+                </div>
 
                 <div class="slide" id="slide4" data-anchor="slide3">
                     <div class="grid-half right news">
@@ -92,9 +74,7 @@
                         <h2>27/11</h2>
                         </div>
                         <div class="grid-4">
-                            <h3>Hey look, here's you right - pink... Pinkman, get it? Here's your cash. You're out on the town, yeah you're partying hardy, you're knocking boots with the chicky babes and aww! Who's this? It's the tax man and he's looking at you. And what does he see? He sees a young fella, big fancy house, unlimited cash supply and no job. Now what is the conclusion the tax man makes? Aaaaannnt! Wrong!<br>
-                            Millions times worse - you're a tax cheat. What do they do? They take every penny and you go in the can for felony tax evasion. Ouch! What was your mistake? You didn't launder your money! Now, you give me your money, okay that's called placement.<br>
-                            What if we just take some stuff off of the RV and build it into something completely different? You know, like a... Like a dune buggy.</h3><hr>
+                            <h3>Hey look, here's you right - pink... Pinkman, get it? Here's your cash. You're out on the town, yeah you're partying hardy, you're knocking boots with the chicky babes and aww! Who's this? It's the tax man and he's looking at you. And what does he see? He sees a young fella, big fancy house, unlimited cash supply and no job. Now what is the conclusion the tax man makes? Aaaaannnt! Wrong! buggy.</h3><hr>
                         </div>
                         <div class="grid-2">
                         <h2>28/11</h2>
@@ -118,10 +98,10 @@
                     </div>
                 </div>
                 <div class="slide" id="slide5" data-anchor="slide3">
-                    <div class="grid-half">
+                    <div class="grid-half map">
                         <img src="img/map.jpg" class="left">
                     </div>
-                    <div class="grid-half">
+                    <div class="grid-half contact-form">
                         <form action="/contact-me" id="df" method="post">
                             <h2>Contact me!</h2>
 
@@ -159,14 +139,22 @@
 
 
         <script type="text/javascript">
-            $(document).ready(function() {
-                $('#fullpage').fullpage({
-                    anchors: ['firstPage', 'secondPage', '3rdPage'],
-                    sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
-                    slidesNavigation: true,
-                    continuous: true,
-                });
-            });
+         $(document).ready(function() {
+            if ($(window).width() > 960) {
+               $('#fullpage').fullpage({
+                                anchors: ['firstPage', 'secondPage', '3rdPage'],
+                                sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
+                                slidesNavigation: true,
+                            });
+
+            }
+            else {
+              $('#slide4 .news').addClass("grid").removeClass("grid-half");
+              $('#slide5 .contact-form').hide();
+              $('#slide5 .map').addClass("grid").removeClass("grid-half");
+              console.log("Funca!");
+            }
+        });
         </script>
 
 
