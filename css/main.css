@@ -303,9 +303,12 @@ textarea {
     }
 }
 @import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
 
 body{
     background-color: #252525;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1,h2,h5{
@@ -334,6 +337,16 @@ li img{
 
 p{
     margin: 3px auto;
+}
+
+.ad{
+    background-color: darkred;
+    color: #FFEBEE;
+    height: 305px;
+}
+
+.ad iframe{
+    margin: 5px;
 }
 
 .dismisseble{
@@ -371,7 +384,7 @@ p{
 
 .flex{
     display: flex;
-    margin-top: 0;    
+    margin-top: 0; 
 }
 
 .logo{
@@ -406,6 +419,7 @@ p{
     background-color: #02233c;
     color: white;
     height: 55px;
+    font-size: 15px;
 }
 
 .footer .grid-2{
@@ -450,4 +464,25 @@ p{
 .username{
     color: #6c6989;
     font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+
+  .resizedtextarea{
+    width: 409px;
+    height: 100px;
+  }
+
+  .grid-4 .user-img{
+    width: 15%;
+  }
+  .footer .grid-1,
+  .ad .ad-text{
+    display: none;
+  }
+
+  iframe{
+    width: 26em;
+    height: 
+  }
 }
