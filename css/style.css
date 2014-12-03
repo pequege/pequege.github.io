@@ -41,7 +41,7 @@ canvas {
     The `max-width` property is the width governer. I dare you to experiment
     with setting this larger, something like 1280px.
   */
-	max-width: 1280px;
+  max-width: 1024px;
 	width:92%;
 	margin:0px auto;
 	position: relative;
@@ -49,6 +49,7 @@ canvas {
 
 .row {
   clear: both;
+  margin-top: 0;
 }
 
 @media screen and (min-width: 480px) {

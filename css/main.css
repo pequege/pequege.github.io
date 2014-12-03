@@ -48,7 +48,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 1em 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -302,105 +302,152 @@ textarea {
         page-break-after: avoid;
     }
 }
-@font-face {
-    font-family: Freestyle Script;
-    src: url("../fonts/FREESCPT.TTF");
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+body{
+    background-color: #252525;
 }
 
-h1{
-    background: rgba(0,0,0,0.5);
+h1,h2,h5{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0 3px;
+    margin: 0 auto;
+}
+
+label{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+li{
+    padding: 0 7px;
+}
+
+li img{
+    width: 20px;
+}
+
+p{
+    margin: 3px auto;
+}
+
+.dismisseble{
+    background: linear-gradient(#dd6300, #fea57e);
+    color: #381e08;
+    text-align: center;
+}
+
+.dismiss span{
+    color: #cae5ff;
+}
+
+.dismiss:hover{
+    background-color: #413f54;
     color: white;
 }
 
-h2{
-    color: #adb1cc;
-    font-family: Freestyle Script;
-    font-size: 85px;
+.glyph-font{
+    font-family: GLYPHICONS halflings;
 }
 
-h3{
-    color: #adb1cc;
-}
-
-#slide1{
-    width: 100%;
-    height: 800px;
-    background-image: url("../img/backg.jpg");
-}
-
-#slide2{
-    background: linear-gradient(to right, #1f2847, #281f47);
-}
-
-#slide3{
-    background: linear-gradient(to left, #1f2847, #281f47);
-}
-
-#slide4{
-    background-image: url("../img/backg2.jpg");
-}
-
-#slide5{
-    background: linear-gradient(to left, #1f2847, #281f47);
-}
-
-#footer {
-bottom: 0px;
-position: fixed;
-height: 20px;
-display: block;
-width: 100%;
-background: #252525;
-z-index: 9;
-text-align: center;
-color: #f2f2f2;
-}
-
-.round{
+.user-img{
     border-radius: 100%;
-    width: 75%;
+    transition: border-radius 0.3s;
 }
 
-/*float right and left class*/
+.user-img:hover{
+    border-radius: 0;
+    transition: border-radius 0.3s;
+}
+
+.classy-font{
+    font-family: 'Lobster', cursive;
+}
+
+.flex{
+    display: flex;
+    margin-top: 0;    
+}
+
+.logo{
+    height: 50px;
+}
+
+.navbar{
+    background-color: #413f54;
+    color: #02233c;
+    text-align: center;
+}
+
+.navbar ul li{
+    display: inline;
+    background-color: #02233c;
+    color: white;
+    font-size: 25px;
+    padding: auto 3px;
+}
+
+.resizedtextarea{
+    width: 645px;
+    height: 100px;
+}
+
 .right{
     float: right;
 }
 
-.left{
-    float: left;
+.footer,
+.top{
+    background-color: #02233c;
+    color: white;
+    height: 55px;
 }
 
-img{
-    margin-top: 5px;
+.footer .grid-2{
+    margin-bottom: 0;
 }
 
-form{
-    text-align: left;
-    color: #adb1cc;
+.footer .grid-3{
+    margin-bottom: 0;
 }
 
-hr{
+.top .grid-1{
+    margin-bottom: 0;
+}
+
+.bar-color{
+    background-color: #413f54;
+    color: #9ad1fa;
     margin: 0;
+    padding: 1px 15.54px;
 }
 
-.resizedTextbox{
-    width: 450px;
-    height: 200px;
+.top-img{
+    height: 40px;
+    width: 40px;
 }
 
-.news{
-    background: rgba(0,0,0,0.5);
-    border-radius: 2%;
+.rounded{
+    border-radius: 100%;
 }
-@media (max-width: 900px) {
-    .grid-img{
-        width: 90px;
-        height: 90px;
-    }
-    #slide3{
-        padding-bottom: 50px;
-    }
-    .news{
-        border-radius: 0;
-    }
+
+.content{
+    background-color: #cae5ff;
+    color: #413f54;
+}
+
+.publish{
+    background-color: #02233c;
+    color: white;
+    font-size: 20px;
+}
+
+.username{
+    color: #6c6989;
+    font-size: 20px;
 }
