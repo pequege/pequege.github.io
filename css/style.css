@@ -67,7 +67,7 @@ canvas {
   .grid-full,
   .grid-unit {
     float: left;
-    width:96.969696969697%;
+    width: 50%;
     margin:0 1.515151515152% 1em;
   }
 
