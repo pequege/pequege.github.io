@@ -1,180 +1,310 @@
-/*------------------------------------------------------------
-
-	Style.css
-
-	Created by:	Dave Rupert
-	Contact:		http://github.com/davatron5000/foldy960
-
-	Copyright 2012
-	License:	  WTFPL + "Not going to maintain this because
-              the rent is too damn high licence."
-
---------------------------------------------------------------*/
-
-/* Responsive Resets
--------------------------------------------------------------- */
-@-o-viewport {
-  width: device-width;
-}
-@-ms-viewport {
-  width: device-width;
-}
-@viewport {
-  width: device-width;
+@font-face {
+    font-family: GLYPHICONS halflings;
+    src: url("../fonts/glyphicons-halflings-regular.ttf");
 }
 
-html {
-  overflow-y: auto;
+/*base style*/
+
+body{
+	margin: 0;
+	font-family: 'Open Sans';
 }
 
-img,
-audio,
-video,
-canvas {
-  max-width: 100%;
+button{
+	background-color: #89a8ff;
+	border: none;
+	color: white;
+	padding: 16px 20px 21px;
 }
 
-/* Grid > 6 Column Mobile First
--------------------------------------------------------------- */
-.container {
-  /*
-    The `max-width` property is the width governer. I dare you to experiment
-    with setting this larger, something like 1280px.
-  */
-  max-width: 1024px;
-	width:92%;
-	margin:0px auto;
-	position: relative;
+ul{
+	list-style: none;
+	margin-top: 0;
+	padding-left: 0;
 }
 
-.row {
-  clear: both;
-  margin-top: 0;
+li{
+	padding: 0 20px;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 98%;
-  }
-
-  .grid-1,
-  .grid-2,
-  .grid-3,
-  .grid-4,
-  .grid-5,
-  .grid-6,
-  .grid-half,
-  .grid-full,
-  .grid-unit {
-    float: left;
-    width: 50%;
-    margin:0 1.515151515152% 1em;
-  }
-
-  .gallery .grid-unit,
-  .grid-half {
-    width:46.969696969697%;
-    margin: 0 1.515151515152% 1em;
-  }
-
-  .grid-flow-opposite{
-    float:right
-  }
+h2{
+	font-size: 20px;
+	color: white;
+	font-weight: normal;
+	margin: 30px 0 25px 90px;
 }
 
-@media screen and (min-width: 640px) {
-  .grid-1     { width: 13.636363636364%; }
-  .grid-2     { width: 30.30303030303%; }
-  .grid-3,
-  .grid-half  { width: 46.969696969697%; }
-  .grid-4     { width: 63.636363636364%; }
-  .grid-5     { width: 80.30303030303%; }
-  .grid-6,
-  .grid-full  { width: 96.969696969697%; }
-
-  .gallery .grid-unit {
-    width: 30.30303030303%;
-  }
-
-  .content-pad-right {
-    padding-right: 4%; /* Use (or don't) as necessary. */
-  }
-
-  .content-pad-left {
-    padding-left: 4%;
-  }
+h3{
+	font-size: 15px;
+	color: #f5e19a;	
+	font-weight: normal;
+	margin: 0 0 35px 90px;
 }
 
-/* Micro Clearfix - http://nicolasgallagher.com/micro-clearfix-hack/
-For best results, use your favorite clearfix here.
--------------------------------------------------------------- */
-.cf:before, .cf:after { content:""; display:table; }
-.cf:after { clear:both; }
-.cf { zoom:1; } /* For IE 6/7 (trigger hasLayout) */
-
-/* Layout
--------------------------------------------------------------- */
-body {
-  font: 100%/1.5 sans-serif;
+input {
+	border: none;
+	font-size: 20px;
+	padding: 20px;
+	width: 225px;
 }
 
-section {
-  margin-bottom: 2em;
+img{
+	margin: 20px auto;
 }
 
-footer {
-  font-size: 0.9em;
-  border-top: 1px solid #ccc;
-  padding: 0.5em 0 2.5em;
+p{
+	margin: 0;
 }
 
-/* Typography
--------------------------------------------------------------- */
-.heading {
-  font-size: 3em;
-  margin: 0;
+/*layout style*/
+#navbar{
+	color: #969ab7;
+	font-size: 18px;
+	margin-bottom: 20px;	
+	padding: 20px 0 1px;
 }
 
-.sub-heading {
-  font-size: 2em;
-  margin-bottom: 0.5em;
+#navbar li{
+	border-left: 2px solid #333333;	
 }
 
-a {
-  color: #0066cc;
+#navbar li:first-child{
+	border-left: none;
+	font-family: GLYPHICONS Halflings;
 }
 
-a:focus,
-a:hover {
-  color: #003399;
+#container{
+	background: linear-gradient(180deg, #6790bc, #7544b7);
+	margin: 0 auto;
+	height: 900px;
+	width: 960px;
+	padding: 20px;
 }
 
-/* Elements
--------------------------------------------------------------- */
-figure {
-  margin: 0;
-  background: #f8f8f8;
+/*modules*/ 
+
+#col-1{
+	width: 8.3%;
 }
 
-figcaption {
-  padding: 0.5em 1em 1em;
-  font-size: 0.875em;
+#col-2{
+	width: 16.6%;
 }
 
-code {
-  padding: 0.5em;
-  background: #efefef;
+#col-3{
+	width: 25%;
 }
 
-/* Helpers
--------------------------------------------------------------- */
-.show-grid div[class*='grid-'] {
-  background-color: #eee;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  display: block;
-  padding: 0.5em 1em;
-  margin-bottom: 1em;
-  text-align: center;
+#col-4{
+	width: 33.3%;
+}
+
+#col-6{
+	width: 50%;
+}
+
+#col-12{
+	width: 100%;
+}
+
+#col-1,
+#col-2,
+#col-3,
+#col-4,
+#col-6,
+#col-12{
+	margin: 10px;
+}
+
+.darkback{
+	background-color: #2b2937;
+}
+
+#dir{
+	color: #f6f6f8;
+}
+
+#dir li{
+	padding-right: 20px;
+	padding-left: 0;
+}
+
+#user{
+	background-color: #2b2937;
+	color: white;
+	padding: 15px;
+}
+
+#user-menu{
+	color: white;
+	padding: 0;
+	margin-top: 20px;
+}
+
+/* THE TRIANGLE
+------------------------------------------------------------------------------------------------------------------------------- */
+
+/* creates triangle */
+.triangle-isosceles {
+  position:relative;
+}
+
+.triangle-isosceles:after {
+  content:"";
+  position:absolute;
+  bottom:-15px; /* value = - border-top-width - border-bottom-width */
+  left:50px; /* controls horizontal position */
+  border-width:15px 15px 0; /* vary these values to change the angle of the vertex */
+  border-style:solid;
+  border-color:#9387f7 transparent;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+}
+
+/* Variant : top
+------------------------------------------ */
+
+.triangle-isosceles.top:after {
+  top: -15px; /* value = - border-top-width - border-bottom-width */
+  right: 43px; /* controls horizontal position */
+  bottom:auto;
+  left:auto;
+  border-width:0 15px 15px; /* vary these values to change the angle of the vertex */
+  border-color:#9387f7 transparent;
+}
+
+
+/*states*/
+
+#navbar li:hover{
+	color: #f6f6f8;
+}
+
+.active{
+	color: #7fffce;
+}
+
+.dp-flex{
+	display: flex;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.selected{
+	color: #b5c0dc;
+}
+
+.rounded{
+	border-radius: 100%;
+}
+
+.rounded-box{
+	border-radius: 8px;
+}
+
+.user-img{
+	border-radius: 100%;
+}
+
+#user img{
+	margin: 0;
+}
+
+#user span{
+	background-color: #9589f5;
+	position: absolute;
+	top: 170px;
+	left: 700px;
+	width: 20px;
+	height: 20px;
+}
+
+#user span p{
+	padding-left: 5px;
+}
+
+#user i{
+	padding-left: 30px;
+}
+
+#user ul{
+	margin: 0;
+}
+
+#user ul li:nth-child(2){
+	padding: 0;
+}
+
+#menu-trigger:hover{
+	color: #9589f5;
+}
+
+#user-menu li{
+	padding: 10px;
+}
+
+#user-menu li:first-child{
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+#user-menu li:last-child{
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+#user-menu li i{
+	color: #695fc0;
+	padding-right: 20px;
+}
+
+#cover{
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	margin: 0 auto;
+}
+
+#user-about{
+	padding: 1px 20px 20px;
+}
+
+#user-about .user-img{
+	border: 3px solid white;
+	height: 80px;
+}
+
+#user-about .user-content{
+	padding: 40px;
+}
+
+#user-about p{
+	color: #9693a8;
+	font-size: 13px;
+}
+
+.back-color-1{
+	background-color: #9387f7;
+}
+
+.back-color-1:hover{
+	background-color: #4d3be4;
+}
+
+.back-color-2{
+	background-color: #9a8efc;
+}
+
+.back-color-2:hover{
+	background-color: #5340ea;
+}
+
+.hidden{
+	display: none;
 }
