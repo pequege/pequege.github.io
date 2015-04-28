@@ -1,310 +1,148 @@
-@font-face {
-    font-family: GLYPHICONS halflings;
-    src: url("../fonts/glyphicons-halflings-regular.ttf");
-}
-
-/*base style*/
-
-body{
-	margin: 0;
-	font-family: 'Open Sans';
-}
-
-button{
-	background-color: #89a8ff;
-	border: none;
-	color: white;
-	padding: 16px 20px 21px;
-}
-
-ul{
-	list-style: none;
-	margin-top: 0;
-	padding-left: 0;
-}
-
-li{
-	padding: 0 20px;
-}
-
-h2{
-	font-size: 20px;
-	color: white;
-	font-weight: normal;
-	margin: 30px 0 25px 90px;
-}
-
-h3{
-	font-size: 15px;
-	color: #f5e19a;	
-	font-weight: normal;
-	margin: 0 0 35px 90px;
-}
-
-input {
-	border: none;
-	font-size: 20px;
-	padding: 20px;
-	width: 225px;
-}
-
-img{
-	margin: 20px auto;
-}
-
-p{
-	margin: 0;
-}
-
-/*layout style*/
-#navbar{
-	color: #969ab7;
-	font-size: 18px;
-	margin-bottom: 20px;	
-	padding: 20px 0 1px;
-}
-
-#navbar li{
-	border-left: 2px solid #333333;	
-}
-
-#navbar li:first-child{
-	border-left: none;
-	font-family: GLYPHICONS Halflings;
-}
-
-#container{
-	background: linear-gradient(180deg, #6790bc, #7544b7);
-	margin: 0 auto;
-	height: 900px;
-	width: 960px;
-	padding: 20px;
-}
-
-/*modules*/ 
-
-#col-1{
-	width: 8.3%;
-}
-
-#col-2{
-	width: 16.6%;
-}
-
-#col-3{
-	width: 25%;
-}
-
-#col-4{
-	width: 33.3%;
-}
-
-#col-6{
-	width: 50%;
-}
-
-#col-12{
-	width: 100%;
-}
-
-#col-1,
-#col-2,
-#col-3,
-#col-4,
-#col-6,
-#col-12{
-	margin: 10px;
-}
-
-.darkback{
-	background-color: #2b2937;
-}
-
-#dir{
-	color: #f6f6f8;
-}
-
-#dir li{
-	padding-right: 20px;
-	padding-left: 0;
-}
-
-#user{
-	background-color: #2b2937;
-	color: white;
-	padding: 15px;
-}
-
-#user-menu{
-	color: white;
-	padding: 0;
-	margin-top: 20px;
-}
-
-/* THE TRIANGLE
-------------------------------------------------------------------------------------------------------------------------------- */
-
-/* creates triangle */
-.triangle-isosceles {
-  position:relative;
-}
-
-.triangle-isosceles:after {
-  content:"";
-  position:absolute;
-  bottom:-15px; /* value = - border-top-width - border-bottom-width */
-  left:50px; /* controls horizontal position */
-  border-width:15px 15px 0; /* vary these values to change the angle of the vertex */
-  border-style:solid;
-  border-color:#9387f7 transparent;
-  /* reduce the damage in FF3.0 */
-  display:block;
-  width:0;
-}
-
-/* Variant : top
------------------------------------------- */
-
-.triangle-isosceles.top:after {
-  top: -15px; /* value = - border-top-width - border-bottom-width */
-  right: 43px; /* controls horizontal position */
-  bottom:auto;
-  left:auto;
-  border-width:0 15px 15px; /* vary these values to change the angle of the vertex */
-  border-color:#9387f7 transparent;
-}
-
-
-/*states*/
-
-#navbar li:hover{
-	color: #f6f6f8;
-}
-
-.active{
-	color: #7fffce;
-}
-
-.dp-flex{
-	display: flex;
-}
-
-.left{
-	float: left;
-}
-
-.right{
-	float: right;
-}
-
-.selected{
-	color: #b5c0dc;
-}
-
-.rounded{
-	border-radius: 100%;
-}
-
-.rounded-box{
-	border-radius: 8px;
-}
-
-.user-img{
-	border-radius: 100%;
-}
-
-#user img{
-	margin: 0;
-}
-
-#user span{
-	background-color: #9589f5;
-	position: absolute;
-	top: 170px;
-	left: 700px;
-	width: 20px;
-	height: 20px;
-}
-
-#user span p{
-	padding-left: 5px;
-}
-
-#user i{
-	padding-left: 30px;
-}
-
-#user ul{
-	margin: 0;
-}
-
-#user ul li:nth-child(2){
-	padding: 0;
-}
-
-#menu-trigger:hover{
-	color: #9589f5;
-}
-
-#user-menu li{
-	padding: 10px;
-}
-
-#user-menu li:first-child{
-	border-top-left-radius: 8px;
-	border-top-right-radius: 8px;
-}
-
-#user-menu li:last-child{
-	border-bottom-left-radius: 8px;
-	border-bottom-right-radius: 8px;
-}
-
-#user-menu li i{
-	color: #695fc0;
-	padding-right: 20px;
-}
-
-#cover{
-	border-top-left-radius: 8px;
-	border-top-right-radius: 8px;
-	margin: 0 auto;
-}
-
-#user-about{
-	padding: 1px 20px 20px;
-}
-
-#user-about .user-img{
-	border: 3px solid white;
-	height: 80px;
-}
-
-#user-about .user-content{
-	padding: 40px;
-}
-
-#user-about p{
-	color: #9693a8;
-	font-size: 13px;
-}
-
-.back-color-1{
-	background-color: #9387f7;
-}
-
-.back-color-1:hover{
-	background-color: #4d3be4;
-}
-
-.back-color-2{
-	background-color: #9a8efc;
-}
-
-.back-color-2:hover{
-	background-color: #5340ea;
-}
-
-.hidden{
-	display: none;
-}
+.col-2 {
+  width: 306px;
+  margin: 0 3px; }
+
+.col-half {
+  width: 460px;
+  margin: 0 3px; }
+
+.col-4 {
+  width: 612px;
+  margin: 0 3px; }
+
+.dark-grey {
+  background: #2b2937;
+  color: #e6e6e6; }
+
+.rounded {
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  padding: 10px; }
+
+.row {
+  display: inline-flex;
+  margin-bottom: 10px; }
+
+.opac-50 {
+  opacity: 0.5; }
+
+a {
+  text-decoration: none; }
+  a:visited {
+    text-decoration: none; }
+
+body {
+  font-family: 'Open Sans';
+  background: #252525;
+  margin: 0; }
+  body #container {
+    background: linear-gradient(135deg, #638cb8, #682e95, #7645b8);
+    height: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 960px; }
+    body #container #navbar {
+      border-radius: 6px;
+      font-size: 15px; }
+      body #container #navbar ul {
+        display: flex;
+        list-style: none;
+        margin: 0 auto;
+        padding-left: 16px; }
+        body #container #navbar ul li {
+          border-left: 2px solid #31333f;
+          margin: 20px 0;
+          padding: 0 10px; }
+          body #container #navbar ul li a {
+            color: #9fa5c5; }
+            body #container #navbar ul li a:hover {
+              color: #e6e6e6; }
+        body #container #navbar ul li.active {
+          border: none; }
+          body #container #navbar ul li.active a {
+            color: #84fdd0; }
+    body #container #subnav a {
+      color: #e6e6e6;
+      font-size: 12px; }
+      body #container #subnav a:hover {
+        color: #84fdd0; }
+    body #container #subnav ul {
+      display: flex;
+      list-style: none;
+      margin: 0 auto;
+      padding: 0; }
+      body #container #subnav ul li {
+        padding: 5px; }
+    body #container #search button {
+      background: #89a4ff;
+      color: #e6e6e6; }
+    body #container #search #googleMap {
+      border-radius: 6px; }
+    body #container #user-menu {
+      border-radius: 6px;
+      height: 2.2em;
+      padding: 2.7px 10px; }
+      body #container #user-menu ul {
+        display: inline-flex;
+        margin: 0;
+        padding-left: 20px; }
+        body #container #user-menu ul li {
+          list-style: none;
+          margin-right: 15px; }
+        body #container #user-menu ul #user-photo img {
+          border-radius: 100%;
+          width: 2em; }
+        body #container #user-menu ul #user-name {
+          font-size: 25px;
+          font-weight: lighter; }
+        body #container #user-menu ul #user-button {
+          font-size: 25px; }
+    body #container #user-stats {
+      padding: 0; }
+      body #container #user-stats #portada {
+        height: 150px; }
+        body #container #user-stats #portada img {
+          border-radius: 6px 6px 0 0;
+          height: 150px;
+          width: 306px; }
+      body #container #user-stats #about ul {
+        list-style: none;
+        display: inline-flex;
+        margin: 0 auto;
+        padding: 10px 0; }
+        body #container #user-stats #about ul li {
+          padding-left: 20px; }
+          body #container #user-stats #about ul li img {
+            border: 3px solid #e6e6e6;
+            border-radius: 100%;
+            height: 60px;
+            width: 60px; }
+          body #container #user-stats #about ul li span {
+            color: #ffe79e; }
+      body #container #user-stats #about p {
+        color: #9996ab;
+        font-size: 12px;
+        margin: 0 auto;
+        padding: 0 20px 10px; }
+      body #container #user-stats #stats {
+        background: #403b5b;
+        border-radius: 0 0 6px 6px;
+        color: #63687c;
+        font-size: 12px; }
+        body #container #user-stats #stats ul {
+          display: inline-flex;
+          list-style: none;
+          padding-left: 0; }
+          body #container #user-stats #stats ul li {
+            padding-left: 20px;
+            text-align: center; }
+            body #container #user-stats #stats ul li img {
+              width: 60px;
+              margin: 0; }
+            body #container #user-stats #stats ul li span {
+              border-bottom: 1px solid #63687c;
+              color: #e6e6e6;
+              font-size: 20px; }
+
+/*# sourceMappingURL=style.css.map */
