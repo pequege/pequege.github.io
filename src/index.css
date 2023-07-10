@@ -1,4 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+
 *{
   margin: 0;
   padding: 0;
+}
+
+body {
+  /* #81271d, #623177 */
+  background: black;
+  background: linear-gradient(-60deg, #581717, #7a2c4a, #452353, #232453);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+}
+
+h1, h2{
+  font-family: 'Bowlby One SC', cursive;
+  background: -webkit-linear-gradient(#d2b48c, antiquewhite);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }
