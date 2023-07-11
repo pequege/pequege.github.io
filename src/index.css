@@ -5,12 +5,8 @@
   padding: 0;
 }
 
-body {
-  /* #81271d, #623177 */
+body{
   background: black;
-  background: linear-gradient(-60deg, #581717, #7a2c4a, #452353, #232453);
-  background-size: 400% 400%;
-  animation: gradient 30s ease infinite;
 }
 
 h1, h2{
@@ -18,6 +14,30 @@ h1, h2{
   background: -webkit-linear-gradient(#d2b48c, antiquewhite);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.bg-theme-bottom{
+  background-color: blue;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+
+.bg-theme-top{
+  background: linear-gradient(-60deg, #581717, #7a2c4a, #452353, #232453);
+  position: relative;
+  height: 100vh;
+}
+
+.animated-color-bg{
+  background: linear-gradient(-60deg, #581717, #7a2c4a, #452353, #232453);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+}
+
+.progress-bar{
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 @keyframes gradient {
