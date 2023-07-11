@@ -51,3 +51,49 @@ h1, h2{
       background-position: 0% 50%;
   }
 }
+
+@media (min-width: 768px) {
+  .line section .card::before{
+    background-color: grey;
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 2px;
+  }
+  
+  .line section:nth-child(odd) .card:before{
+    right: -14px;
+  }
+  
+  .line section:nth-child(even) .card:before{
+    left: -14px;
+  }
+  
+  .line section:last-child .card:before{
+    display: none;
+  }
+  
+  .line section .card::after{
+    background-color: grey;
+    border-radius: 50%;
+    content: '';
+    height: 20px;
+    position: absolute;
+    top: 0;
+    width: 20px;
+  }
+  
+  .line section .card:hover:after{
+    background-color: aqua;
+  }
+  
+  .line section .card:nth-child(odd):after{
+    transform: translate(50%, -50%);
+    right: -13px;
+  }
+  
+  .line section:nth-child(even) .card:after{
+    transform: translate(-50%, -50%);
+    left: -13px;
+  }
+}

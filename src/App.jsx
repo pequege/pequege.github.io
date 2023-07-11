@@ -28,7 +28,7 @@ function App() {
                 con facilidad de aprendizaje, mucha predisposición y grandes cualidades para trabajar
                 en equipo. 
                 {/* Cuento con conocimientos sobre análisis de requerimientos de precesos y
-                representación de modelos mediante diagramas. */}
+                  representación de modelos mediante diagramas. */}
                 </p>
               </blockquote>
               <figcaption class="blockquote-footer text-end">
@@ -37,83 +37,85 @@ function App() {
             </figure>
           </Col>
         </Row>
-        <section>
-          <Row>
-            <Col md={6}>
-              <Card bg='dark' text='light' className='p-2'>
-                <Card.Title>
-                  <h2>About Me</h2>
-                </Card.Title>
-                <Card.Body>
-                  <ul className='list-unstyled text-end mx-4'>
-                    <li className='ms-2'>31 años <span className='opacity-50'> 05/03/92</span></li>
-                    <li className='ms-2'>Argentino <span className='opacity-50'>(San Miguel de Tucumán)</span></li>
-                    <li className='ms-2'>Estudiante <span className='opacity-75'> de Ingeniería en Sistemas De Información</span> <span className='opacity-50'>(3er año)</span></li>
+        <Container className='line asd'>
+          <section>
+            <Row>
+              <Col md={6}>
+                <Card bg='dark' text='light' className='p-2'>
+                  <Card.Title>
+                    <h2>About Me</h2>
+                  </Card.Title>
+                  <Card.Body>
+                    <ul className='list-unstyled text-end mx-4'>
+                      <li className='ms-2'>31 años <span className='opacity-50'> 05/03/92</span></li>
+                      <li className='ms-2'>Argentino <span className='opacity-50'>(San Miguel de Tucumán)</span></li>
+                      <li className='ms-2'>Estudiante <span className='opacity-75'> de Ingeniería en Sistemas De Información</span> <span className='opacity-50'>(3er año)</span></li>
+                    </ul>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </section>
+          <section>
+            <Row>
+              <Col md={6} className='ms-auto me-0'>
+                <Card bg='dark' text='light' className='p-2'>
+                  <Card.Title>
+                    <h2>Formación Académica</h2>
+                  </Card.Title>
+                  <Card.Body>
+                  <ul className='list-unstyled mx-4 text-start'>
+                    <li className='text-decoration-none'>Universidad Tecnológica Nacional<span className='opacity-50'> - Facultar Regional Tucumán</span></li>
+                    <li>Inst. Carlos Pellegrini<span className='opacity-50'> - Secundario</span></li>
+                    <li></li>
                   </ul>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </section>
-        <section>
-          <Row>
-            <Col md={6} className='ms-auto me-0'>
-              <Card bg='dark' text='light' className='p-2'>
-                <Card.Title>
-                  <h2>Formación Académica</h2>
-                </Card.Title>
-                <Card.Body>
-                <ul className='list-unstyled mx-4 text-start'>
-                  <li className='text-decoration-none'>Universidad Tecnológica Nacional<span className='opacity-50'> - Facultar Regional Tucumán</span></li>
-                  <li>Inst. Carlos Pellegrini<span className='opacity-50'> - Secundario</span></li>
-                  <li></li>
-                </ul>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </section>
-        <section>
-          <Row>
-            <Col md={6}>
-              <Card bg='dark' text='light' className='p-2'>
-                <Card.Title>
-                  <h2>Cursos Realizados</h2>
-                </Card.Title>
-                <Card.Body>
-                <ul className='list-unstyled mx-4 text-end'>
-                  <li className='opacity-75'>
-                    <ProgressBar variant='success' now={80} label='Full Stack Dev MERN - Rolling Code' animated></ProgressBar>
-                  </li>
-                  <li>Inglés 4th Adults Instituto Aticana</li>
-                  <li>Git & GitHub Insignia</li>
-                  <li>Web Studio 2014 Insignia</li>
-                  <li>HTML5, CSS3 y Frameworks UTN - FRT</li>
-                  <li>Inglés Instituto Anglo</li>
-                </ul>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </section>
-        <section>
-          <Row>
-            <Col md={6} className='ms-auto me-0'>
-              <Card bg='dark' text='light' className='p-2'>
-                <Card.Title>
-                  <h2>Conocimientos informales</h2>
-                </Card.Title>
-                <Card.Body>
-                <ul className='list-unstyled mx-4 text-start'>
-                  <li>Diseño gráfico (Photoshop & Illustrator)</li>
-                  <li>Programación Orientada a Objetos (Java)</li>
-                  <li>Edición de video (vegas Pro)</li>
-                </ul>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </section>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </section>
+          <section>
+            <Row>
+              <Col md={6}>
+                <Card bg='dark' text='light' className='p-2'>
+                  <Card.Title>
+                    <h2>Cursos Realizados</h2>
+                  </Card.Title>
+                  <Card.Body>
+                  <ul className='list-unstyled mx-4 text-end'>
+                    <li className='opacity-75'>
+                      <ProgressBar variant='success' now={80} label='Full Stack Dev MERN - Rolling Code' animated></ProgressBar>
+                    </li>
+                    <li>Inglés 4th Adults Instituto Aticana</li>
+                    <li>Git & GitHub Insignia</li>
+                    <li>Web Studio 2014 Insignia</li>
+                    <li>HTML5, CSS3 y Frameworks UTN - FRT</li>
+                    <li>Inglés Instituto Anglo</li>
+                  </ul>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </section>
+          <section>
+            <Row>
+              <Col md={6} className='ms-auto me-0'>
+                <Card bg='dark' text='light' className='p-2'>
+                  <Card.Title>
+                    <h2>Conocimientos informales</h2>
+                  </Card.Title>
+                  <Card.Body>
+                  <ul className='list-unstyled mx-4 text-start'>
+                    <li>Diseño gráfico (Photoshop & Illustrator)</li>
+                    <li>Programación Orientada a Objetos (Java)</li>
+                    <li>Edición de video (vegas Pro)</li>
+                  </ul>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </section>
+        </Container>
       </Container>
       <Footer></Footer>
     </>
