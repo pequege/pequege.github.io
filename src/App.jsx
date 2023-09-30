@@ -1,16 +1,17 @@
 import { Card, Col, Container, ProgressBar, Row } from 'react-bootstrap';
+import Footer from './components/Footer';
+import imagen_perfil from './assets/user-profile-icon.webp'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import Footer from './components/Footer';
-import imagen_perfil from './assets/user-profile-icon.webp'
+import 'animate.css';
 
 function App() {
   return (
     <>
       <Container className='text-light text-center p-3 mt-5'>
         <h1>Gerardo E. Mansilla</h1>
-        <h2 className='opacity-75'>Web Developer</h2>
+        <h2 className='opacity-75'>Desarrollador Web <span className='opacity-90'>Full Stack </span></h2>
         <Row className='my-4 pe-0'>
           <Col md={6} >
             <img src={imagen_perfil} className='img-fluid rounded-top w-50'/>
@@ -37,8 +38,8 @@ function App() {
             </figure>
           </Col>
         </Row>
-        <Container className='line asd'>
-          <section>
+        <Container className='line'>
+          <section className='animate__flipInY animate__delay-1s animate__animated'>
             <Row>
               <Col md={6}>
                 <Card bg='dark' text='light' className='p-2'>
@@ -56,7 +57,7 @@ function App() {
               </Col>
             </Row>
           </section>
-          <section>
+          <section className='animate__flipInY animate__delay-2s animate__animated'>
             <Row>
               <Col md={6} className='ms-auto me-0'>
                 <Card bg='dark' text='light' className='p-2'>
@@ -74,7 +75,7 @@ function App() {
               </Col>
             </Row>
           </section>
-          <section>
+          <section className='animate__flipInY animate__delay-3s animate__animated'>
             <Row>
               <Col md={6}>
                 <Card bg='dark' text='light' className='p-2'>
@@ -83,9 +84,7 @@ function App() {
                   </Card.Title>
                   <Card.Body>
                   <ul className='list-unstyled mx-4 text-end'>
-                    <li className='opacity-75'>
-                      <ProgressBar variant='success' now={80} label='Full Stack Dev MERN - Rolling Code' animated></ProgressBar>
-                    </li>
+                    <li>Full Stack Dev MERN - Rolling Code</li>
                     <li>Inglés 4th Adults Instituto Aticana</li>
                     <li>Git & GitHub Insignia</li>
                     <li>Web Studio 2014 Insignia</li>
@@ -97,7 +96,7 @@ function App() {
               </Col>
             </Row>
           </section>
-          <section>
+          <section className='animate__flipInY animate__delay-4s animate__animated'>
             <Row>
               <Col md={6} className='ms-auto me-0'>
                 <Card bg='dark' text='light' className='p-2'>

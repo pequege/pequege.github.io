@@ -62,11 +62,11 @@ h1, h2{
   }
   
   .line section:nth-child(odd) .card:before{
-    right: -14px;
+    right: -13px;
   }
   
   .line section:nth-child(even) .card:before{
-    left: -14px;
+    left: -13px;
   }
   
   .line section:last-child .card:before{
