@@ -1,0 +1,19 @@
+body{
+  background: radial-gradient(93.59% 93.59% at 12.36% 6.41%, #272C44 0%, rgb(21, 17, 37) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  color: white;
+  height: 100vh;
+}
+
+.button-github{
+  background-color: #5A3B82;
+  border-color: #5A3B82;
+}
+
+.button-github:hover{
+  background-color: #4a2f6d;
+  border-color: #4a2f6d;
+}
+
+.img-skill{
+  max-width: 45px;
+}

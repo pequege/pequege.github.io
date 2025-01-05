@@ -7,9 +7,9 @@ import { About } from "./components/About";
 function App() {
   return (
     <>
-      <Container>
+      <Container className="text-center" fluid>
         <Tabs
-          defaultActiveKey="profile"
+          defaultActiveKey="home"
           id="uncontrolled-tab-example"
           className="mb-3"
         >

@@ -7,7 +7,7 @@ export const Home = () => {
       <h1>Gerardo Mansilla</h1>
       <h4>Dev Web Full Stack Jr</h4>
 
-      <Button className="mx-1" variant="primary" size="lg">
+      <Button className="mx-1 button-github" size="lg">
         <i className="bi bi-github"></i>
         Github
       </Button>
