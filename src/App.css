@@ -14,6 +14,15 @@ body{
   border-color: #4a2f6d;
 }
 
+.button-github:active{
+  background-color: #7349ab !important;
+  border-color: #7349ab !important;
+}
+
 .img-skill{
   max-width: 45px;
+}
+
+.profile-pic{
+  max-width: 250px;
 }
