@@ -7,10 +7,9 @@ import { About } from "./components/About";
 function App() {
   return (
     <>
-      <Container className="text-center" fluid>
+      <Container fluid>
         <Tabs
           defaultActiveKey="home"
-          id="uncontrolled-tab-example"
           className="mb-3"
         >
           <Tab eventKey="home" title="Home">

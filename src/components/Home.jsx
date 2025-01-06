@@ -9,7 +9,7 @@ export const Home = () => {
         alt="profile image"
         roundedCircle
       />
-      <h1>Gerardo Mansilla</h1>
+      <h1 className="changa-one-regular">Gerardo Mansilla</h1>
       <h4>Dev Web Full Stack Jr</h4>
 
       <Button

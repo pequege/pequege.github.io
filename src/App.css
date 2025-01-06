@@ -1,28 +1,87 @@
-body{
-  background: radial-gradient(93.59% 93.59% at 12.36% 6.41%, #272C44 0%, rgb(21, 17, 37) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+body {
+  background: radial-gradient(93.59% 93.59% at 12.36% 6.41%, #272C44 0%, rgb(21, 17, 37) 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li{
+  margin-top: 1rem;
+}
+
+#root {
+  display: flex;
+  align-items: center;
   height: 100vh;
 }
 
-.button-github{
-  background-color: #5A3B82;
-  border-color: #5A3B82;
-}
-
-.button-github:hover{
+.button-github:hover {
   background-color: #4a2f6d;
   border-color: #4a2f6d;
 }
 
-.button-github:active{
+.button-github:active {
   background-color: #7349ab !important;
   border-color: #7349ab !important;
 }
 
-.img-skill{
+.changa-one-regular {
+  font-family: "Changa One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.img-skill {
   max-width: 45px;
 }
 
-.profile-pic{
+.nav-item .active{
+  border: none;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(to right, #5BE9B9 0%, #6E07F3 100%) 1;
+}
+
+.nav-link{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-link, .nav-link .active{
+  background-color: transparent !important;
+}
+
+.nav-item .active{
+  color: white !important;
+}
+
+.nav-tabs{
+  border-bottom: none;
+  font-family: "Changa One", serif;
+}
+
+.nav-tabs, .tab-content{
+  justify-content: center;
+}
+
+.profile-pic {
   max-width: 250px;
+}
+
+.tab-content {
+  align-content: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+
+.work-title {
+  font-family: 'Changa One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 21px;
+  letter-spacing: 0.3em;
 }
