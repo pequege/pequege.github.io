@@ -2,25 +2,25 @@ import { Col, Container, Image, Row } from "react-bootstrap";
 
 export const About = () => {
   return (
-    <Container>
-
+    <Container fluid>
       <Row>
         <Col xs={12} lg={6}>
           <div className="text-center">
             <Image
-              src="https://picsum.photos/200"
+              className="profile-pic"
+              src="./src/assets/profile-pic.jpg"
               alt="profile image"
               roundedCircle
             />
             <h5 className="changa-one-regular">Gerardo Mansilla</h5>
           </div>
           <p>
-            Me encuentro en búsqueda de un puesto que me ofrezca la oportunidad de
-            aplicar mis habilidades y experiencias, a la vez de actualizar mis
-            conocimientos sobre las nuevas tendencias y tecnologias emergentes en
-            el ámbito de IT. Me considero una persona con facilidad de
-            aprendizaje, mucha predisposición y grandes cualidades para trabajar
-            en equipo.
+            Me encuentro en búsqueda de un puesto que me ofrezca la oportunidad
+            de aplicar mis habilidades y experiencias, a la vez de actualizar
+            mis conocimientos sobre las nuevas tendencias y tecnologias
+            emergentes en el ámbito de IT. Me considero una persona con
+            facilidad de aprendizaje, mucha predisposición y grandes cualidades
+            para trabajar en equipo.
           </p>
         </Col>
         <Col xs={12} lg={6}>

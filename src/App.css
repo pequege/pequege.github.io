@@ -1,8 +1,12 @@
 body {
   background: radial-gradient(93.59% 93.59% at 12.36% 6.41%, #272C44 0%, rgb(21, 17, 37) 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
   ;
   color: white;
+  min-height: 100vh;
+  background-attachment: fixed; /* Fija el fondo al viewport */
+  background-size: cover; /* Asegura que el gradiente cubra el área visible */
+  background-repeat: no-repeat; /* Evita que el gradiente se repita */
 }
 
 ul {
@@ -13,20 +17,14 @@ ul li{
   margin-top: 1rem;
 }
 
-#root {
-  display: flex;
-  align-items: center;
-  height: 100vh;
+.button-github {
+  background-color: #7349ab !important;
+  border-color: #7349ab !important;
 }
 
 .button-github:hover {
-  background-color: #4a2f6d;
+  background-color: #4a2f6d !important;
   border-color: #4a2f6d;
-}
-
-.button-github:active {
-  background-color: #7349ab !important;
-  border-color: #7349ab !important;
 }
 
 .changa-one-regular {
@@ -45,8 +43,28 @@ ul li{
   border-image: linear-gradient(to right, #5BE9B9 0%, #6E07F3 100%) 1;
 }
 
+.nav-item .active:hover{
+  border: none;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(to right, #5BE9B9 0%, #6E07F3 100%) 1;
+}
+
 .nav-link{
   color: rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+}
+
+.nav-tabs{
+  padding-top: 3rem;
+}
+
+.nav-tabs .nav-link:hover{
+  border-color: transparent;
+}
+
+.nav-link:hover{
+  color: rgba(255, 255, 255, 1);
+  transition: 0.3s;
 }
 
 .nav-link, .nav-link .active{
@@ -68,13 +86,6 @@ ul li{
 
 .profile-pic {
   max-width: 250px;
-}
-
-.tab-content {
-  align-content: center;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
 }
 
 .work-title {

@@ -7,7 +7,7 @@ import { About } from "./components/About";
 function App() {
   return (
     <>
-      <Container fluid>
+      <Container>
         <Tabs
           defaultActiveKey="home"
           className="mb-3"
