@@ -17,6 +17,14 @@ ul li{
   margin-top: 1rem;
 }
 
+.btn-message{
+  bottom: 20px;
+  height: 50px;
+  position: absolute;
+  right: 20px;
+  width: 50px;
+}
+
 .button-github {
   background-color: #7349ab !important;
   border-color: #7349ab !important;
