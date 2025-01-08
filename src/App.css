@@ -88,6 +88,14 @@ ul li{
   max-width: 250px;
 }
 
+.profile-pic-about {
+  max-width: 150px;
+}
+
+.skill-row .skill-item img{
+  margin: 5px;
+}
+
 .work-title {
   font-family: 'Changa One';
   font-style: normal;

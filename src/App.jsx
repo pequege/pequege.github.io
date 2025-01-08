@@ -18,7 +18,7 @@ function App() {
           <Tab eventKey="about" title="About">
             <About></About>
           </Tab>
-          <Tab eventKey="work" title="Work">
+          <Tab eventKey="work" title="Work" className="d-flex justify-content-center">
             <Work></Work>
           </Tab>
         </Tabs>
