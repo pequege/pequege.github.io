@@ -1,34 +1,14 @@
-import CommentIcon from "@mui/icons-material/Comment";
-import Fab from "@mui/material/Fab";
-import Tooltip from "@mui/material/Tooltip";
-import { Button, Container, Form, Image, Modal, Tab, Tabs } from "react-bootstrap";
+import { Container, Tab, Tabs } from "react-bootstrap";
 import { Home } from "./components/Home";
 import { Work } from "./components/Work";
 import { About } from "./components/About";
-import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import "./App.css";
-import { SpeedDial, SpeedDialAction, Typography } from "@mui/material";
-import TranslateIcon from "@mui/icons-material/Translate";
 
-import { grey } from "@mui/material/colors";
+import { FormContacto } from "./components/FormContacto";
+import "./App.css";
+import { FabChangeLanguage } from "./components/FabChangeLanguage";
 
 function App() {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-  const {
-    t,
-    i18n: { changeLanguage },
-  } = useTranslation();
-  /* boton lenguaje */
-  const colorFabLenguaje = grey[900];
-  const actions = [
-    { icon: <Image src="./src/assets/arg.png" width={40} />, name: "Español", language: "es" },
-    { icon: <Image src="./src/assets/usa.png" width={40} />, name: "English", language: "en" },
-  ];
-
   return (
     <>
       <Container>
@@ -43,66 +23,9 @@ function App() {
             <Work></Work>
           </Tab>
         </Tabs>
-        <SpeedDial
-          ariaLabel="SpeedDial basic example"
-          sx={{ position: "fixed", bottom: 16, left: 16 }}
-          icon={<TranslateIcon />}
-        >
-          {actions.map((action) => (
-            <SpeedDialAction
-              sx={{ background: `${colorFabLenguaje}` }}
-              key={action.name}
-              icon={action.icon}
-              tooltipTitle={action.name}
-              onClick={() => {
-                console.log(action.language);
-                changeLanguage(action.language);
-              }}
-            />
-          ))}
-        </SpeedDial>
-        <Tooltip title="Say Hello!" placement="top-end">
-          <Fab
-            color="secondary"
-            aria-label="contact"
-            className="fab-right"
-            onClick={() => {
-              handleShow();
-            }}
-          >
-            <CommentIcon />
-          </Fab>
-        </Tooltip>
+        <FabChangeLanguage></FabChangeLanguage>
       </Container>
-      <Modal show={show} onHide={handleClose} data-bs-theme="dark">
-        <Modal.Header closeButton>
-          <Modal.Title className="changa-one-regular">
-            Thanks for taking the time to reach out. How can I help you today?
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Form>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Your email address</Form.Label>
-              <Form.Control type="email" placeholder="name@example.com" />
-            </Form.Group>
-            <Form.Group
-              className="mb-3"
-              controlId="exampleForm.ControlTextarea1"
-            >
-              <Form.Label>Your Message</Form.Label>
-              <Form.Control as="textarea" rows={3} />
-              <Button
-                className="float-right mt-3"
-                variant="primary"
-                onClick={handleClose}
-              >
-                <i className="bi bi-send-fill m-1"></i> Send
-              </Button>
-            </Form.Group>
-          </Form>
-        </Modal.Body>
-      </Modal>
+      <FormContacto></FormContacto>
     </>
   );
 }
