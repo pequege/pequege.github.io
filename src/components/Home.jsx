@@ -44,7 +44,7 @@ export const Home = () => {
           variant="danger"
           size="lg"
         >
-          <i class="bi bi-cloud-download-fill"></i>
+          <i className="bi bi-cloud-download-fill"></i>
           My CV
         </Button>
       </Container>
