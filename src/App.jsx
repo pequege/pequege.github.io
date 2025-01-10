@@ -1,7 +1,7 @@
 import CommentIcon from "@mui/icons-material/Comment";
 import Fab from "@mui/material/Fab";
 import Tooltip from "@mui/material/Tooltip";
-import { Button, Container, Form, Modal, Tab, Tabs } from "react-bootstrap";
+import { Button, Container, Form, Image, Modal, Tab, Tabs } from "react-bootstrap";
 import { Home } from "./components/Home";
 import { Work } from "./components/Work";
 import { About } from "./components/About";
@@ -25,8 +25,8 @@ function App() {
   /* boton lenguaje */
   const colorFabLenguaje = grey[900];
   const actions = [
-    { icon: <Typography>🇦🇷</Typography>, name: "Español", language: "es" },
-    { icon: <Typography>🇺🇸</Typography>, name: "English", language: "en" },
+    { icon: <Image src="./src/assets/arg.png" width={40} />, name: "Español", language: "es" },
+    { icon: <Image src="./src/assets/usa.png" width={40} />, name: "English", language: "en" },
   ];
 
   return (
