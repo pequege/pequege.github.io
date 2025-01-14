@@ -133,7 +133,7 @@ export const FormContacto = () => {
                 })}
               />
               <Form.Text className="text-danger">
-                {errors.consulta?.message}
+                {errors.user_message?.message}
               </Form.Text>
             </Form.Group>
             <Button
