@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 export const About = () => {
   const { t } = useTranslation();
   return (
-    <Container fluid>
+    <Container fluid className="mb-5rem">
       <Row className="d-flex justify-content-center">
         <Col xs={12} lg={4}>
           <div className="text-center">
@@ -16,15 +16,17 @@ export const About = () => {
             />
             <h5 className="changa-one-regular">Gerardo Mansilla</h5>
           </div>
-          {t("aboutMeText")
+          {t("about-descripcion")
             .split("\n")
             .map((line, index) => (
-              <p key={index} className="text-light">{line}</p>
+              <p key={index} className="text-light">
+                {line}
+              </p>
             ))}
         </Col>
         <Col xs={12} lg={4}>
           <Row className="my-3">
-            <h5 className="changa-one-regular">Skills</h5>
+            <h5 className="changa-one-regular">{t("habilidades")}</h5>
             <Row className="mt-3 skill-row">
               <Col xs={6} className="skill-item">
                 <h6>Stack Mern</h6>
@@ -241,7 +243,7 @@ export const About = () => {
             </Row>
           </Row>
           <Row className="my-3">
-            <h5 className="changa-one-regular">Languages</h5>
+            <h5 className="changa-one-regular">{t("lenguajes")}</h5>
             <p>
               <strong>
                 Inglés B1 <br />
@@ -249,8 +251,13 @@ export const About = () => {
               Instituto Aticana
             </p>
             <p>
-              I’ve finished the Duolingo English course and I’m currently
-              learning German just for fun. Check my duolingo profile
+              {t("lenguaje-descripcion")
+                .split("\n")
+                .map((line, index) => (
+                  <p key={index} className="text-light">
+                    {line}
+                  </p>
+                ))}
             </p>
             <Image
               className="duolingo-logo"

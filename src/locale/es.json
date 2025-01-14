@@ -1,8 +1,11 @@
 {
   "translation": {
-    "aboutMeText": "Me encuentro en búsqueda de un puesto que me ofrezca la oportunidad de aplicar mis habilidades y experiencias, a la vez de actualizar mis conocimientos sobre las nuevas tendencias y tecnologias emergentes en el ámbito de IT. \n Me considero una persona con facilidad de aprendizaje, mucha predisposición y grandes cualidades para trabajar en equipo.",
+    "about-descripcion": "Me encuentro en búsqueda de un puesto que me ofrezca la oportunidad de aplicar mis habilidades y experiencias, a la vez de actualizar mis conocimientos sobre las nuevas tendencias y tecnologias emergentes en el ámbito de IT. \n Me considero una persona con facilidad de aprendizaje, mucha predisposición y grandes cualidades para trabajar en equipo.",
     "certificados" : "Certificados",
     "proyectos" : "Proyectos",
-    "experiencia" : "Experiencia"
+    "experiencia" : "Experiencia",
+    "habilidades" : "Habilidades",
+    "lenguajes" : "Lenguajes",
+    "lenguaje-descripcion" : "Terminé el curso de inglés de Duolingo y actualmente estoy aprendiendo Alemán solo por diversión.\nVisitá mi perfil de duolingo"
   }
 }

@@ -3,7 +3,7 @@ import { Button, Col, Container, Image, Row } from "react-bootstrap";
 export const Home = () => {
   return (
     <>
-      <Container className="d-flex align-items-center flex-column">
+      <Container className="mt-5rem d-flex align-items-center flex-column">
         <Image
           className="profile-pic"
           src="./src/assets/profile-pic.jpg"

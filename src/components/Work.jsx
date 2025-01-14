@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
 /* asd */
@@ -16,7 +16,7 @@ import Typography from "@mui/material/Typography";
 export const Work = () => {
   const { t } = useTranslation();
   return (
-    <Container>
+    <Container className="mb-5rem">
       <Timeline
         sx={{
           [`& .${timelineItemClasses.root}:before`]: {
@@ -60,13 +60,25 @@ export const Work = () => {
               {t("proyectos")}
             </Typography>
             <ul>
-              <li>
-                <strong>Kani</strong> <br />
-                Front End Development
+              <li className="d-flex">
+                <div className="me-3 my-auto">
+                  <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                    <i className="bi bi-box-arrow-up-right fs-5"></i>
+                  </a>
+                </div>
+                <div>
+                  <strong>Kani</strong> <br />
+                  Front End Development
+                </div>
               </li>
-              <li>
-                <strong>Separapp</strong> <br />
-                Prototipos Alta Fidelidad en Figma
+              <li className="d-flex">
+                <div className="me-3 my-auto">
+                  <i className="bi bi-box-arrow-up-right fs-5"></i>
+                </div>
+                <div>
+                  <strong>Separapp</strong> <br />
+                  Prototipos Alta Fidelidad en Figma
+                </div>
               </li>
             </ul>
           </TimelineContent>
